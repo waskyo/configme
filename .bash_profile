@@ -23,7 +23,7 @@ if [ -d ~/man ]; then
 fi
 
 if [ -f /usr/games/fortune ]; then
-	/usr/games/fortune 30% all 30% off 20% off/religion 20% off/astrology
+	/usr/games/fortune -a
 fi
 
 #if [ -f ~/.keymap ]; then
@@ -36,5 +36,7 @@ export HISTFILESIZE=10000
 export HISTSIZE=10000
 export HISTCONTROL=ignoredups
 
-/usr/bin/keychain --timeout 60 --agents gpg
-[[ -f $HOME/.keychain/$HOSTNAME-sh-gpg ]] && source ~/.keychain/$HOSTNAME-sh-gpg
+/usr/bin/keychain --nogui --timeout 1440 ~/.ssh/id_rsa
+[[ -f $HOME/.keychain/$HOSTNAME-sh ]] && source $HOME/.keychain/$HOSTNAME-sh
+#/usr/bin/keychain --nogui --timeout 60 --agents gpg
+#[[ -f $HOME/.keychain/$HOSTNAME-sh-gpg ]] && source ~/.keychain/$HOSTNAME-sh-gpg

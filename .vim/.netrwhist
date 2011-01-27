@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/ricardo/tmp/a'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/etc/apt/apt.conf.d'
+let g:netrw_dirhist_2='/tmp/awesome'
+let g:netrw_dirhist_3='/etc/apt/apt.conf.d'
+let g:netrw_dirhist_4='/home/ricardo/thesis'

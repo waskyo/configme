@@ -7,6 +7,7 @@ hi LScript ctermbg=8 ctermfg=2
 hi Definition cterm=standout ctermfg=8 
 hi Link cterm=standout,underline ctermbg=11 guibg=11
 hi Done ctermbg=10 ctermfg=8 
+hi LToDo ctermbg=1 ctermfg=3 
 hi IM cterm=bold ctermbg=0 ctermfg=4 
 hi LSpace ctermbg=0 ctermfg=0 
 
@@ -59,13 +60,8 @@ highlight link lemail Identifier
 syntax match ldone /[Dd][Oo][Nn][Ee]/
 highlight link ldone Done
 
-" ToDo XXX FIXME
 syntax match ltodo /[Tt][Oo][Dd][Oo]/
-syntax match lfixme /FIXME/
-syntax match lxxx /XXX/
-highlight def link ltodo Todo
-highlight def link lxxx Todo
-highlight def link lfixme Todo
+highlight link ltodo LToDo
 
 " we don't like highlighting leading space
 syntax match lspace /^\s\+/ contained
@@ -82,6 +78,3 @@ highlight link lim IM
 
 syntax region lscript start=@(((@hs=s+3 end=@)))@he=s-3 contains=lspace
 highlight link lscript LScript
-
-syntax region ldocstring start=@"""@hs=s+3 end=@"""@he=s-2 contains=lspace
-highlight link ldocstring String

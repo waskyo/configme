@@ -1,0 +1,29 @@
+[user]
+	name = Ricardo Baratto
+
+[alias]
+	ci = commit -a
+	co = checkout
+	st = status -a
+	undo = reset --hard HEAD
+	llog = log --name-status
+
+[color]
+	diff = true
+	pager = true
+	status = true
+
+[diff]
+	# Tells git to detect renames. If set to "copies" it will detect
+	# copies, as well.
+	renames = copies
+
+[i18n]
+	logOutputEncoding = utf-8
+
+[push]
+	default = matching
+
+[core]
+	proxy = none for vmware.com
+	gitproxy = "/home/rbaratto/bin/gitproxy"

@@ -1,6 +1,6 @@
 source ~/.bash/functions.sh
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin:$PATH:/home/ricardo/code/android/android/tools
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin:$PATH
 
 export CVS_RSH="ssh"
 
@@ -8,6 +8,7 @@ export CVS_RSH="ssh"
 eval $(lesspipe)
 
 export MPD_PORT=6600
+export MPD_HOST=enchufe.local
 
 export PGDATABASE=scorepress
 export PGUSER=scorepress
