@@ -1,0 +1,79 @@
+alias info='info --vi-keys'
+alias ls='ls --color=auto -F'
+alias dir='ls --color=auto --format=vertical'
+alias vdir='ls --color=auto --format=long'
+alias cls='clear'
+alias grep='grep --color=auto'
+alias gvim='gvim -reverse -geometry 80x45'
+alias civ3='cd ~/.transgaming/c_drive/Program\ Files/juegos/civ3 && winex Civilization3.exe'
+alias bc='bc -l'
+alias md='mkdir'
+
+alias burncd='sudo wodim -v gracetime=2 dev=/dev/hdc speed=40 driveropts=burnfree -eject -dao'
+#alias burndvd='sudo dvdrecord -v dev=1,0,0 speed=4 driveropts=burnfree -eject -dao'
+#alias burndvd='sudo wodim -v gracetime=2 dev=/dev/hdc speed=4 driveropts=burnfree -eject -dao'
+alias burndvd='sudo wodim -v gracetime=2 dev=/dev/sr0 speed=4 driveropts=burnfree -eject -dao'
+alias copycd='sudo readcd dev=2,0 -v f=quake3.iso'
+
+# some more ls aliases
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+alias tree='tree -C'
+
+alias wget.mp3='wget -c -nd -np -A mp3'
+
+#alias seti='cd ~/setiathome && setiathome & pgrep setiathome | xargs setbatch && fg'
+alias seti='cd ~/setiathome && schedtool -B -e setiathome'
+
+# bittorrent
+alias btdownloadcurses='btdownloadcurses --max_upload_rate 40'
+
+# thinc
+alias gotothinc='cd ~/thinc/server/xc/programs/Xserver/hw/xfree86/thinc'
+alias gotobuild='cd ~/thinc/server/build/programs/Xserver/hw/xfree86/thinc' 
+alias gotoclient='cd ~/thinc/clients/x11'
+
+#   alias valgrind='valgrind --gdb-attach=yes --num-callers=7'
+alias valgrind='valgrind --num-callers=7' 
+
+alias et='et +connect'
+
+# open a tunnel to connect to styx through cluster05. use 
+# localhost -p 10000
+# to connect
+alias tostyx='ssh -L 10000:styx:22 cluster05 cat -'
+
+# download stuff
+alias getit='wget -nd -A jpg -r -l 0'
+
+alias acroread='acroread -openInNewWindow'
+#alias xshot='xwd -root -display :0 -silent | xwdtopnm | pnmtopng > ./screendump.png'
+alias xshot='import -window root ./screendump.png'
+
+alias sfs.cluster05='sfskey login ricardo@cluster05'
+alias rdesktop='XLIB_SKIP_ARGB_VISUALS=1 rdesktop -P -a 24 -g 1024x768'
+
+alias freetennis='./freetennis  -newbie -surf clay -xres 1680 -yres 1050'
+#alias rsync='rsync -axvz --rsh=ssh --delete-after --progress'
+alias rsync='rsync -axvz --rsh=ssh --progress -S'
+
+alias feh='feh -Zd -F'
+#alias feh='feh -Zd -g 1280x1024'
+
+alias cscope='cscope -b -q'
+alias sp='screen -c ~/sp'
+alias andr='screen -c ~/androide'
+alias ncmpc='ncmpc -c'
+alias tladiff='tla changes --diffs | colordiff | less -r'
+alias supertuxkart='supertuxkart -s 1024x768'
+alias startx='mv ~/.xsession-errors{,.old} && startx > ~/.xsession-errors 2>&1'
+# with pchdtv, need to plug cable into purple connector (bottom right)
+alias tvtime='tvtime -x /dev/mixer1:line'
+alias xephyr='Xephyr :1 -ac -screen 1280x1024 -dpi 100'
+
+alias eyeD3='eyeD3 --set-encoding=utf8'
+alias top='htop'
+
+# pdf reader that behaves like vim
+alias xpdf='apvlv'
